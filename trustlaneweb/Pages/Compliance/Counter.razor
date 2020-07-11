@@ -1,0 +1,450 @@
+﻿@page "/counter"
+@using Syncfusion.Blazor.Lists
+@using Syncfusion.Blazor.Navigations
+
+
+<div>
+    Workflow "access to collected data"
+</div>
+<div>
+    Workflow "access to shared data"
+</div>
+<div>
+    Workflow "access to rectification"
+</div>
+<div>
+    Workflow "deletion"
+</div>
+<div>
+    Workflow "restriction"
+</div>
+<div>
+    workflow "portability"
+</div>
+<div>
+    AI stop automatied decision making
+</div>
+<div>
+    Private right of action
+</div>
+<br /><em>BUSINESS REQUIREMENTS</em>
+<div>Strict Age Opt In</div>
+<div>Notice Transparency REquiremtn</div>
+<div>Data Breach notification workflow</div>
+<div>Risk Assessment</div>
+<div>Prohibition of discrimination</div>
+<div>Purpose limitation</div>
+<div>Processing limitation</div>
+<div>Fudiciary Duty</div>
+
+<br />
+https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-home?view=o365-worldwide
+
+https://iapp.org/news/a/us-state-comprehensive-privacy-law-comparison/
+
+<div class="control_wrapper">
+    <SfTreeView TValue="TreeItem">
+        <TreeViewFieldsSettings Id="Id" Text="Name" ParentID="Pid" HasChildren="HasChild"
+                                Selected="Selected" Expanded="Expanded"
+                                DataSource="@TreeDataSource"></TreeViewFieldsSettings>
+        <TreeViewTemplates>
+            <NodeTemplate>
+                <div>
+                    <div class="treeviewdiv">
+                        <div class="nodetext">
+                            <span class="treeName">@((context as TreeItem).Name)</span>
+                        </div>
+                        @{
+                            @if (((context as TreeItem).Count) != 0)
+                            {
+                                <div class="nodebadge">
+                                    <span class="treeCount e-badge e-badge-primary">@((context as TreeItem).Count)</span>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+            </NodeTemplate>
+        </TreeViewTemplates>
+    </SfTreeView>
+</div>
+@code{
+    List<TreeItem> TreeDataSource = new List<TreeItem>();
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        //LocalData.Add(new TreeData
+        //{
+        //    Id = 10293,
+        //    Name = "Summary",
+        //    HasChild = false,
+        //});
+
+        // Todo: add unread states for the currently logged in user / group
+        TreeDataSource = CreateTreeViewModel(staticComplianceList);
+    }
+
+    class TreeItem
+    {
+        public override string ToString()
+        {
+            return "ID:" + Id + "  Name:" + Name + "  Parent:" + Pid;
+        }
+
+        public int Id { get; set; }
+        public int? Pid { get; set; }
+        public string Name { get; set; }
+        public bool HasChild { get; set; }
+        public bool Expanded { get; set; }
+        public int Count { get; set; }
+        public bool Selected { get; set; }
+    }
+
+    int GetCountForID(int TreeViewNodeID)
+    {
+        return 1;
+    }
+
+    /// <summary>
+    /// MAINTAINER NOTE: Increase the number of items per hiearchy, and levels
+    /// by using bit-shifting instead of multiplying by 10, increased compactness
+    /// for TreeView based in (Int)
+    /// </summary>
+    /// <param name="complianceList">A static list, and maybe one day Table, OData, or CosmosDB</param>
+    /// <returns>A list of items for use in a Treeview</returns>
+    List<TreeItem> CreateTreeViewModel(List<ComplianceList> complianceList, bool? DebugMode = false)
+    {
+        var treeItems = new List<TreeItem>();
+
+        bool debugShowIDAsCount = DebugMode.Value;
+
+        var byCategory = from item in complianceList
+                         group item by item.Category into newgroup
+                         orderby newgroup.Key
+                         select newgroup;
+        var categoryCount = byCategory.Count();
+        for (int i = 0; i < categoryCount; i++)
+        {
+            int tempI = (i + 1) * 100000000;
+
+            var tmpNameI = byCategory.ElementAt(i).Key;
+            var IdI = tempI;
+            var PidI = IdI;
+            int countI = debugShowIDAsCount == true ? IdI : GetCountForID(IdI);
+            treeItems.Add(new TreeItem()
+            {
+                Name = tmpNameI,
+                Count = countI,
+                Expanded = false,
+                HasChild = true,
+                Selected = true,
+                Id = IdI,
+                //Pid = PidI
+            });
+
+
+            var byRegion = from cat in byCategory.ElementAt(i)
+                           group cat by cat.Region into newRegions
+                           orderby newRegions.Key
+                           select newRegions;
+            var regionCount = byRegion.Count();
+            for (int ii = 0; ii < regionCount; ii++)
+            {
+                int tempII = (ii + 1) * 10000000;
+
+                var IdII = tempI + tempII;
+                var tmpNameII = byRegion.ElementAt(ii).Key;
+                int PidII = tempI;
+                int countII = debugShowIDAsCount == true ? IdII : GetCountForID(IdII);
+                if (!String.IsNullOrEmpty(tmpNameII))
+                {
+                    treeItems.Add(new TreeItem()
+                    {
+                        Name = tmpNameII,
+                        Count = countII,
+                        Expanded = true,
+                        HasChild = true,
+                        Selected = true,
+                        Id = IdII,
+                        Pid = PidII
+                    });
+                }
+
+                var byCountry = from region in byRegion.ElementAt(ii)
+                                group region by region.Country into newCountry
+                                orderby newCountry.Key
+                                select newCountry;
+                var countryCount = byCountry.Count();
+                for (int iii = 0; iii < countryCount; iii++)
+                {
+
+                    int tempIII = (iii + 1) * 1000000;
+
+                    var IdIII = IdII + tempIII;
+                    var tmpNameIII = byCountry.ElementAt(iii).Key;
+                    int PidIII = 0;
+                    if (!String.IsNullOrEmpty(tmpNameII))
+                        PidIII = IdII;
+                    else if (!String.IsNullOrEmpty(tmpNameI))
+                        PidIII = IdI;
+                    int countIII = debugShowIDAsCount == true ? IdIII : GetCountForID(IdIII);
+
+                    if (!String.IsNullOrEmpty(tmpNameIII))
+                    {
+                        treeItems.Add(new TreeItem()
+                        {
+                            Name = tmpNameIII,
+                            Count = countIII,
+                            Expanded = false,
+                            HasChild = true,
+                            Selected = true,
+                            Id = IdIII,
+                            Pid = PidIII
+                        });
+                    }
+
+
+                    var byState = from state in byCountry.ElementAt(iii)
+                                  group state by state.State into newState
+                                  orderby newState.Key
+                                  select newState;
+                    var byStateCount = byState.Count();
+                    for (int iv = 0; iv < byStateCount; iv++)
+                    {
+                        int tempIV = (iv + 1) * 10000;
+
+                        var IdIV = IdIII + tempIV;
+                        var tmpNameIV = byState.ElementAt(iv).Key;
+                        int PidIV = 0;
+                        if (!String.IsNullOrEmpty(tmpNameIII))
+                            PidIV = IdIII;
+                        else if (!String.IsNullOrEmpty(tmpNameII))
+                            PidIV = IdII;
+                        else if (!String.IsNullOrEmpty(tmpNameI))
+                            PidIV = IdI;
+
+                        if (tmpNameIV == "Federal Laws")
+                        {
+                            Console.WriteLine("breakpoint");
+                        }
+
+                        if (!String.IsNullOrEmpty(tmpNameIV))
+                        {
+                            int countIV = debugShowIDAsCount == true ? IdIV : GetCountForID(IdIV);
+                            treeItems.Add(new TreeItem()
+                            {
+                                Name = tmpNameIV,
+                                Count = countIV,
+                                Expanded = false,
+                                HasChild = true,
+                                Selected = true,
+                                Id = IdIV,
+                                Pid = PidIV
+                            });
+                        }
+
+                        var byDocument = from title in byState.ElementAt(iv)
+                                         group title by title.Title into newTitle
+                                         orderby newTitle.Key
+                                         select newTitle;
+                        var byDocumentCount = byDocument.Count();
+                        for (int v = 0; v < byDocumentCount; v++)
+                        {
+                            int tempV = (v + 1) * 100;
+
+                            var IdV = IdIV + tempV;
+                            var tmpNameV = byDocument.ElementAt(v).Key;
+                            int PidV = 0;
+                            if (!String.IsNullOrEmpty(tmpNameIV))
+                                PidV = IdIV;
+                            else if (!String.IsNullOrEmpty(tmpNameIII))
+                                PidV = IdIII;
+                            else if (!String.IsNullOrEmpty(tmpNameII))
+                                PidV = IdII;
+                            else if (!String.IsNullOrEmpty(tmpNameI))
+                                PidV = IdI;
+
+                            if (!String.IsNullOrEmpty(tmpNameV))
+                            {
+                                int countV = debugShowIDAsCount == true ? IdV : GetCountForID(IdV);
+                                treeItems.Add(new TreeItem()
+                                {
+                                    Name = tmpNameV,
+                                    Count = countV,
+                                    Expanded = false,
+                                    HasChild = false,
+                                    Selected = true,
+                                    Id = IdV,
+                                    Pid = PidV
+                                });
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        return treeItems;
+    }
+
+    public class ComplianceList
+    {
+        public string Category { get; set; }
+
+        public string Region { get; set; }
+
+        public string Country { get; set; }
+
+        public string State { get; set; }
+
+        public string County { get; set; }
+
+        public string Title { get; set; }
+        public string URL { get; set; }
+    }
+
+    public static List<ComplianceList> staticComplianceList = new List<ComplianceList>()
+    {
+         //new ComplianceList() { Category = "Global", Title = "CIS Benchmark", URL = ""},
+         //new ComplianceList() { Category = "Global", Title = "CSA-STAR attestation", URL = ""},
+         //new ComplianceList() { Category = "Global", Title = "CSA-STAR certification", URL = ""},
+         //new ComplianceList() { Category = "Global", Title = "CSA-STAR self assessment", URL = ""},
+         //new ComplianceList() { Category = "Global", Title = "ISO 20000-1:2011", URL = ""},
+         //new ComplianceList() { Category = "Global", Title = "ISO 22301", URL = ""},
+         //new ComplianceList() { Category = "Global", Title = "ISO 27001", URL = ""},
+         //new ComplianceList() { Category = "Global", Title = "ISO 27017", URL = ""},
+         //new ComplianceList() { Category = "Global", Title = "ISO 27018", URL = ""},
+         //new ComplianceList() { Category = "Global", Title = "ISO 27701", URL = ""},
+         //new ComplianceList() { Category = "Global", Title = "ISO 9001", URL = ""},
+         //new ComplianceList() { Category = "Global", Title = "SOC", URL = ""},
+         //new ComplianceList() { Category = "Global", Title = "WCAG", URL = ""},
+
+        //new ComplianceList() { Category = "US Government", Title = "CJIS", URL = "" },
+        //new ComplianceList() { Category = "US Government", Title = "CNSSI 1253", URL = "" },
+        //new ComplianceList() { Category = "US Government", Title = "DFARS", URL = "" },
+        //new ComplianceList() { Category = "US Government", Title = "DoD DISA L2, L4, L5", URL = "" },
+        //new ComplianceList() { Category = "US Government", Title = "DoE 10 CFR Part 810", URL = "" },
+        //new ComplianceList() { Category = "US Government", Title = "EAR (US Export Adm. Reg.)", URL = "" },
+        //new ComplianceList() { Category = "US Government", Title = "FedRAMP", URL = "" },
+        //new ComplianceList() { Category = "US Government", Title = "FIPS 140-2", URL = "" },
+        //new ComplianceList() { Category = "US Government", Title = "IRS 1075", URL = "" },
+        //new ComplianceList() { Category = "US Government", Title = "ITAR", URL = "" },
+        //new ComplianceList() { Category = "US Government", Title = "NIST 800-171", URL = "" },
+        //new ComplianceList() { Category = "US Government", Title = "NIST CSF", URL = "" },
+        //new ComplianceList() { Category = "US Government", Title = "Section 508 VPATS", URL = "" },
+
+        new ComplianceList() { Category = "Industry", Title = "23 NYCRR Part 500", URL = "" },
+        new ComplianceList() { Category = "Industry", Country = "Netherlands", Title = "AFM + DNB (Netherlands)", URL = "" },
+        new ComplianceList() { Category = "Industry", Country = "Australia", Region="Australia / Pacific", Title = "APRA (Australia)", URL = "" },
+        new ComplianceList() { Category = "Industry",  Country = "France", Title = "AMF and ACPR (France)", URL = "" },
+        new ComplianceList() { Category = "Industry", Title = "CDSA", URL = "" },
+        new ComplianceList() { Category = "Industry",  Country = "US", Title = "CFTC 1.31 (US)", URL = "" },
+        new ComplianceList() { Category = "Industry",  Country = "UK", Title = "DPP (UK)", URL = "" },
+        new ComplianceList() { Category = "Industry",  Country = "EU", Title = "EBA (EU)", URL = "" },
+        new ComplianceList() { Category = "Industry",  Country = "UK", Title = "FACT (UK)", URL = "" },
+        new ComplianceList() { Category = "Industry",  Country = "UK", Title = "FCA (UK)", URL = "" },
+        new ComplianceList() { Category = "Industry", Title = "FDA CFR Title 21 Part 11", URL = "" },
+        new ComplianceList() { Category = "Industry", Title = "FERPA", URL = "" },
+        new ComplianceList() { Category = "Industry",  Country = "US", Title = "FFIEC (US)", URL = "" },
+        new ComplianceList() { Category = "Industry",  Country = "Switzerland", Title = "FINMA (Switzerland)", URL = "" },
+        new ComplianceList() { Category = "Industry", Title = "FINRA 4511", URL = "" },
+        new ComplianceList() { Category = "Industry",  Country = "Japan", Title = "FISC (Japan)", URL = "" },
+        new ComplianceList() { Category = "Industry",  Country = "Denmark", Title = "FSA (Denmark)", URL = "" },
+        new ComplianceList() { Category = "Industry",  State = "Federal Laws", Region = "North America", Country="United States", Title = "GLBA", URL = "" },
+        new ComplianceList() { Category = "Industry", Title = "GxP", URL = "" },
+        new ComplianceList() { Category = "Industry",  Country = "France", Title = "HDS (France)", URL = "" },
+        new ComplianceList() { Category = "Industry", State = "Federal Laws", Region = "North America", Country="United States", Title = "HIPAA / HITECH", URL = "" },
+        new ComplianceList() { Category = "Industry", State = "Federal Laws", Region = "North America", Country="United States", Title = "COPPA", URL = "" },
+        new ComplianceList() { Category = "Industry", Title = "HITRUST", URL = "" },
+        new ComplianceList() { Category = "Industry",  Country = "Poland", Title = "KNF (Poland)", URL = "" },
+        new ComplianceList() { Category = "Industry", Title = "MARS-E", URL = "" },
+        new ComplianceList() { Category = "Industry",  Country = "Singapor", Title = "MAS + ABS (Singapore)", URL = "" },
+        new ComplianceList() { Category = "Industry", Title = "MPAA", URL = "" },
+        new ComplianceList() { Category = "Industry",  Country = "Belgium", Title = "NBB + FSMA (Belgium)", URL = "" },
+        new ComplianceList() { Category = "Industry",  Country = "Netherlands", Title = "NEN-7510 (Netherlands)", URL = "" },
+        new ComplianceList() { Category = "Industry", Title = "NERC", URL = "" },
+        new ComplianceList() { Category = "Industry",  Country = "Canada", Title = "OSFI (Canada)", URL = "" },
+        new ComplianceList() { Category = "Industry", Title = "PCI DSS", URL = "" },
+        new ComplianceList() { Category = "Industry",  Country = "India", Title = "RBI + IRDAI (India)", URL = "" },
+        new ComplianceList() { Category = "Industry", Title = "SEC 17a-4", URL = "" },
+        new ComplianceList() { Category = "Industry", Title = "SEC Regulation SCI", URL = "" },
+        new ComplianceList() { Category = "Industry", Title = "Shared assessments", URL = "" },
+        new ComplianceList() { Category = "Industry", Title = "SOX", URL = "" },
+        new ComplianceList() { Category = "Industry", Country = "Germany", Title = "TISAX (Germany)", URL = "" },
+        new ComplianceList() { Category = "Industry", Title = "TruSight", URL = "" },
+
+        new ComplianceList() { Category = "Regional", Country = "Netherlands", Region="Europe", Title = "BIR 2012 (Netherlands)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "Germany", Region="Europe", Title = "C5 (Germany)", URL = "" },
+        new ComplianceList() { Category = "Regional", State="North Dakota", Country = "US", Region="North America", Title = "HB 1485", URL = "" },
+        new ComplianceList() { Category = "Regional", State="Maryland", Country = "US", Region="North America", Title = "SB613", URL = "" },
+        new ComplianceList() { Category = "Regional", State="Massachusetts", Country = "US", Region="North America", Title = "S-120", URL = "" },
+        new ComplianceList() { Category = "Regional", State="Hawaii", Country = "US", Region="North America", Title = "SB418", URL = "" },
+        new ComplianceList() { Category = "Regional", State="New York", Country = "US", Region="North America", Title = "S5642", URL = "" },
+        new ComplianceList() { Category = "Regional", State="California", Country = "US", Region="North America", Title = "CCPA (US-California)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "Australia", Region="Australia / Pacific", Title = "IRAP / CCSL (Australia)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "Japan", Region="Asia", Title = "CS Mark Gold (Japan)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "UK", Region="Europe", Title = "Cyber Essentials Plus (UK)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "Canada", Region="North America", Title = "Canadian Privacy Laws", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "China", Region="Asia",Title = "DJCP (China)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "EU", Region="Europe", Title = "EN 301 549 (EU)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "Spain",  Region="Europe", Title = "ENS (Spain)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "EU", Region="Europe", Title = "ENISA IAF (EU)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "EU", Region="Europe", Title = "EU Model Clauses", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "EU", Region="Europe", Title = "EU-US Privacy Shield", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "China", Region="Asia", Title = "GB 18030 (China)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "EU", Region="Europe", Title = "GDPR (EU)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "UK ",Region="Europe", Title = "G-Cloud (UK)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "Germany", Region="Europe", Title = "IDW PS 951 (Germany)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "Korea", Region="Asia", Title = "ISMS (Korea)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "Germany", Region="Europe", Title = "IT Grundschutz Workbook (Germany)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "Spain", Region="Europe", Title = "LOPD (Spain)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "India", Region="Asia",Title = "MeitY (India)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "Singapore", Region="Asia",Title = "MTCS (Singapore)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "Japan", Region="Asia",Title = "My Number (Japan)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "New Zealand", Region="Australia / Pacific", Title = "NZ CC Framework (New Zealand)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "UK", Region="Europe", Title = "PASF (UK)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "Argentina", Region="South America", Title = "PDPA (Argentina)", URL = "" },
+        new ComplianceList() { Category = "Regional",  Country = "Russia", Region="Europe", Title = "Personal Data Localization (Russia)", URL = "" },
+        new ComplianceList() { Category = "Regional", Country = "China",Region="Asia",Title = "TRUCS (China)", URL = "" },
+   };
+}
+<style>
+
+    .control_wrapper {
+        max-width: 320px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+
+    .e-treeview .e-list-text {
+        width: 100%;
+    }
+
+    .treeCount.e-badge {
+        padding: 0.4em;
+        vertical-align: text-bottom;
+    }
+
+    .material .treeCount.e-badge {
+        vertical-align: middle;
+    }
+
+    .nodetext {
+        float: left;
+    }
+
+    .e-rtl .nodetext {
+        float: right;
+    }
+
+    .nodebadge {
+        float: right;
+        margin-right: 5px
+    }
+
+    .e-rtl .nodebadge {
+        float: left;
+        margin-left: 5px
+    }
+</style>

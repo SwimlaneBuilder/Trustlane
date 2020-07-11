@@ -1,0 +1,80 @@
+﻿@using Syncfusion.Blazor
+@using Syncfusion.Blazor.RichTextEditor
+
+<h3>DocViewer</h3>
+
+Compare the changes in documents to track and limit liability, or match to existing TOS
+<div class="col-lg-12 control-section">
+    <div class="control_wrapper">
+        <!-- <SfComboBox TValue="string" TItem="RevisionData" Placeholder="Select a revision" CssClass="e-multi-column" AllowFiltering="true" DataSource="@Data" PopupHeight="200px">
+          <ComboBoxTemplates TItem="RevisionData">
+              <HeaderTemplate>
+                  <table><tr><th class="e-text-center combo-width">Emp ID</th><th>Editor</th><th>Designation</th></tr></table>
+              </HeaderTemplate>
+              <ItemTemplate>
+                  <table><tbody><tr><td class="e-text-center combo-width">@((context as RevisionData).EmployeeID)</td><td>@((context as RevisionData).FirstName)</td><td>@((context as RevisionData).Designation)</td></tr> </tbody></table>
+              </ItemTemplate>
+          </ComboBoxTemplates>
+          <ComboBoxFieldSettings Text="Editor" Value="EmployeeID"></ComboBoxFieldSettings>
+      </SfComboBox>
+        -->
+    </div>
+</div>
+<style>
+
+    .control_wrapper {
+        margin: 0 auto;
+        width: 400px;
+        margin-top: 40px;
+    }
+
+    @@media (max-width: 900px) {
+        .control-wrapper {
+            width: 300px;
+        }
+    }
+
+    .combo-width {
+        width: 75px;
+    }
+</style>
+
+
+<SfRichTextEditor Height="250px" Formatter="@Format" EditorMode="EditorMode.Markdown">
+    <ChildContent>
+        The sample is added to showcase **markdown editing**.
+        Type or edit the content and apply formatting to view markdown formatted content.
+        We can add our own custom formation syntax for the Markdown formation, [sample link](https://blazor.syncfusion.com/demos/rich-text-editor/markdown-custom-format?theme=bootstrap4).
+        The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content.
+        <RichTextEditorToolbarSettings Items="@Tools"></RichTextEditorToolbarSettings>
+    </ChildContent>
+</SfRichTextEditor>
+
+@code{
+    Type models = typeof(RevisionData);
+    public class RevisionData
+    {
+        public DateTime ChangeDate { get; set; }
+        public Double Changes { get; set; }
+        public string Editor { get; set; }
+        public string EmployeeID { get; set; }
+        public string Designation { get; set; }
+        public string Country { get; set; }
+    }
+    List<RevisionData> Data = new List<RevisionData>
+{
+        new RevisionData() { ChangeDate = new DateTime(2018, 8, 8), Changes  = 0.7,  Editor = "Andrew Fuller", EmployeeID = "1", Designation = "Team Lead", Country = "England"  },
+        new RevisionData() { ChangeDate = new DateTime(2019, 4, 10), Changes  = 0.2,Editor = "Anne Dodsworth", EmployeeID = "2", Designation = "Developer", Country = "USA" },
+        new RevisionData() { ChangeDate = new DateTime(2020, 12, 7), Changes  = 0.1,Editor = "Janet Leverling", EmployeeID = "3", Designation = "HR", Country = "USA" },
+        new RevisionData() { ChangeDate = new DateTime(2018, 2, 8), Changes  = 0.2,Editor = "Laura Callahan", EmployeeID = "4", Designation = "Product Manager", Country = "USA" },
+        new RevisionData() { ChangeDate = new DateTime(2015, 4, 9), Changes  = 1,Editor = "Margaret Peacock", EmployeeID = "5", Designation = "Developer", Country = "USA" },
+    };
+
+    // Document markdown tools
+    private object[] Tools = new object[] {
+        "Bold", "Italic", "StrikeThrough", "|",
+        "Formats", "OrderedList", "UnorderedList", "|",
+        "CreateLink", "Image", "CreateTable", "|", "Undo", "Redo"
+    };
+    private string Format = "new sf.richtexteditor.MarkdownFormatter({ 'listTags': { 'OL': '1., 2., 3.' } })";
+}

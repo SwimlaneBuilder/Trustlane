@@ -1,0 +1,136 @@
+﻿@using Syncfusion.Blazor.Lists
+
+<h3>Component1</h3>
+
+<SfListView CssClass="nestedlist" DataSource="@ListData" ShowHeader="true" HeaderTitle="Folder" ShowIcon="true">
+    <ListViewFieldSettings Id="Id" Text="Text" Child="Child" IconCss="Icon" Tooltip="Text"></ListViewFieldSettings>
+</SfListView>
+
+@code {
+            List<DataModel> ListData = new List<DataModel>();
+            class DataModel
+            {
+                public string Id { get; set; }
+                public string Text { get; set; }
+                public string Icon { get; set; }
+                public List<DataModel> Child { get; set; }
+            }
+            protected override void OnInitialized()
+        {
+            base.OnInitialized();
+            ListData.Add(new DataModel
+            {
+                Id = "01",
+                Text = "Classroom1",
+                Icon = "folder",
+                Child = new List<DataModel>() { 
+                        new DataModel { Id= "01-01", Text= "Field Trip Parent Signature", Icon= "file" },
+                        new DataModel { Id= "01-02", Text= "Current Grade", Icon= "file" },
+                        new DataModel { Id= "01-03", Text= "Parental Notes", Icon= "file" },
+                        new DataModel { Id= "01-04", Text= "Allergies", Icon= "file" },
+                        new DataModel { Id= "01-05", Text= "Emergency Contact", Icon= "file" },
+                        }
+                });
+        ListData.Add(new DataModel
+        {
+            Id = "02",
+            Text = "Classroom2",
+            Icon = "folder",
+            Child = new List<DataModel>() {
+                    new DataModel { Id= "02-01", Text= "Field Trip Parent Signature", Icon= "file" },
+                    new DataModel { Id= "02-02", Text= "Current Grade", Icon= "file" },
+                    new DataModel { Id= "02-03", Text= "Parental Notes", Icon= "file" },
+                    new DataModel { Id= "02-04", Text= "Allergies", Icon= "file" },
+                    new DataModel { Id= "02-05", Text= "Emergency Contact", Icon= "file" },
+                }
+        });
+        ListData.Add(new DataModel
+        {
+            Id = "03",
+            Text = "Sports Club",
+            Icon = "folder",
+            Child = new List<DataModel>() {
+                   new DataModel { Id= "03-01", Text= "Checklist items", Icon= "file" },
+                   new DataModel { Id= "03-02", Text= "Team Roster Notes", Icon= "file" },
+                   new DataModel { Id= "03-03", Text= "Signed Waver", Icon= "file" },
+                   new DataModel { Id= "03-04", Text= "Contact Info - Emergency", Icon= "file" },
+                   new DataModel { Id= "03-05", Text= "Contact Info - General", Icon= "file" }
+                }
+        });
+        ListData.Add(
+            new DataModel
+            {
+                Id = "04",
+                Text = "Family",
+                Icon = "folder",
+                Child = new List<DataModel>() {
+                new DataModel { Id= "04-01", Text= "Joe Smith", Icon= "folder", Child= new List<DataModel>() {
+                    new DataModel { Id= "04-01-01", Text= "Medical Card", Icon= "file" },
+                    new DataModel { Id= "04-01-02", Text= "Allergies", Icon= "file" },
+                    new DataModel { Id= "04-01-03", Text= "", Icon= "file" } }
+                },
+
+                new DataModel { Id= "04-02", Text= "Person2", Icon= "folder", Child= new List<DataModel>() {
+                    new DataModel { Id= "04-02-01", Text= "WIN_20160726_094117.JPG", Icon= "file" },
+                    new DataModel { Id= "04-02-02", Text= "WIN_20160726_094118.JPG", Icon= "file" },
+                    new DataModel { Id= "04-02-03", Text= "WIN_20160726_094119.JPG", Icon= "file" } }
+                },
+
+                new DataModel { Id= "04-03", Text= "Person3", Icon= "folder", Child= new List<DataModel>() {
+                    new DataModel { Id= "04-03-01", Text= "WIN_20160726_094117.JPG", Icon= "file" },
+                    new DataModel { Id= "04-03-02", Text= "WIN_20160726_094118.JPG", Icon= "file" },
+                    new DataModel { Id= "04-03-03", Text= "WIN_20160726_094119.JPG", Icon= "file" } }
+                },
+
+                new DataModel { Id= "04-04", Text= "Person4", Icon= "folder", Child= new List<DataModel>() {
+                    new DataModel { Id= "04-04-01", Text= "WIN_20160726_094117.JPG", Icon= "file" },
+                    new DataModel { Id= "04-04-02", Text= "WIN_20160726_094118.JPG", Icon= "file" },
+                    new DataModel { Id= "04-04-03", Text= "WIN_20160726_094119.JPG", Icon= "file" } }
+                },
+
+
+       }
+            });
+
+        ListData.Add(
+            new DataModel
+            {
+                Id = "05",
+                Text = "Neighbors",
+                Icon = "folder",
+                Child = new List<DataModel>() {
+                new DataModel { Id= "05-01", Text= "UI-Guide.pdf", Icon= "file" },
+                new DataModel { Id= "05-02", Text= "Tutorials.zip", Icon= "file" },
+                new DataModel { Id= "05-03", Text= "Game.exe", Icon= "file" },
+                new DataModel { Id= "05-04", Text= "TypeScript.7z", Icon= "file" }, }
+            });
+    }
+}
+<style>
+
+    .e-listview .e-list-icon {
+        height: 24px;
+        width: 30px;
+    }
+
+    .folder {
+        background-repeat: no-repeat;
+        background-image: url("css/listview/images/file_icons.png");
+        background-position: -5px -466px;
+        background-size: 302%;
+    }
+
+    .file {
+        background-repeat: no-repeat;
+        background-image: url("css/listview/images/file_icons.png");
+        background-position: -5px -151px;
+        background-size: 302%;
+    }
+
+    .nestedlist {
+        max-width: 500px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+</style>

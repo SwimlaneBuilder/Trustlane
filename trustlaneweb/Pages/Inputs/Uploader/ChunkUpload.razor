@@ -1,0 +1,18 @@
+﻿@page "/File-Upload/Chunk-Upload"
+
+@using Syncfusion.Blazor.Inputs
+
+<div class="col-lg-12 control-section">
+    <div class="control_wrapper">
+        <SfUploader ID="UploadFiles" DropArea=".control-fluid" MaxFileSize=104857600>
+            <UploaderAsyncSettings SaveUrl="https://aspnetmvc.syncfusion.com/services/api/uploadbox/Save" RemoveUrl="https://aspnetmvc.syncfusion.com/services/api/uploadbox/Remove" ChunkSize=500000></UploaderAsyncSettings>
+        </SfUploader>
+    </div>
+</div>
+
+<style>
+    .control_wrapper {
+        width: 350px;
+        margin: 0 auto;
+    }
+</style>

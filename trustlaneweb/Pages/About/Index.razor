@@ -1,0 +1,705 @@
+﻿@using Syncfusion.Blazor.Inputs;
+@using Syncfusion.Blazor.Buttons;
+@using Syncfusion.Blazor.Cards
+@using Syncfusion.Blazor.LinearGauge
+@using Syncfusion.Blazor
+@using Syncfusion.Blazor.DropDowns
+@using Syncfusion.Blazor.InPlaceEditor
+@using Syncfusion.Blazor.Gantt
+
+<h3>About</h3>
+
+Trustlane, safespaces, moneyfree holistic health
+<br /> 
+This website is automatically deployed and maintained on GitHub and deployed to Windows Azure at the URL https://trustlaneweb.azurewebsites.net todo: frontDoor address for scalabilty if free
+
+Scalability features and other useful tools are automatically enabled / disabled based on usage.
+
+Status can be found on https://trustlanestatus.azurewebsites.net  front door address, or DNS address(es)
+
+Funding status for each feature or dependency:
+
+Phase 1: Opex Base Business operations 2 years in regions
+ 
+will cost a minimum of
+(Realtime balance inquiry)
+<SfLinearGauge Orientation="Orientation.Horizontal" Height="100px">
+    <LinearGaugeContainer Width="30" Offset="-20" BackgroundColor="#e0e0e0">
+        <LinearGaugeContainerBorder Width="0" />
+    </LinearGaugeContainer>
+    <LinearGaugeAxes>
+        <LinearGaugeAxis>
+            <LinearGaugeLine Offset="30" />
+            <LinearGaugeAxisLabelStyle Offset="50" />
+            <LinearGaugeMajorTicks Interval="10" Height="20" />
+            <LinearGaugeMinorTicks Interval="5" Height="10" />
+            <LinearGaugePointers>
+                <LinearGaugePointer Value="10" Height="15" Width="15" Placement="Syncfusion.Blazor.LinearGauge.Placement.Near" Offset="-50" MarkerType="MarkerType.Triangle" />
+            </LinearGaugePointers>
+            <LinearGaugeRanges>
+                <LinearGaugeRange Start="0" End="10" StartWidth="30" EndWidth="30" Color="#30b32d" />
+            </LinearGaugeRanges>
+        </LinearGaugeAxis>
+    </LinearGaugeAxes>
+</SfLinearGauge>
+
+- Tax: Delaware LLC + Agent fees
+- Business type: Social Enterprise Cooperative operating as an early stage not-for-profit b-Corporation manifesting as a Distributed Autonomous Organization variant
+- Github: No charge
+- Azure Pipelines w/Github: No charge
+- Azure Active Directory domain B2C (Special credentials for Facebook, Google, etc)
+- trustlane.org name registration
+- dev-trustlane.org name registration (security testing based on DNS dot level)
+- uat-trustlane.org name registration (security testing based on DNS dot level)
+- Deployment to Production, UAT, DEV, instances: No charge (though associated to a human's credit card)
+- SMTP privacy relay and tracking
+- Secure message portal
+- Voice privacy and authenticated relay service
+- VPN Service to protect Wifi and cellular connections
+- Tor website proxy to secure holistic health resources
+- Digital data privacy tools for authentication and zone partioning
+- DMZ data trust, workflow, key services
+- Wiki style tracking of privacy regulation and needs
+- TLS Scanner to verify transport security
+- DMARC and DKIM and inbound and outboudn mail security for SMTP offering
+- Zero knowlege proof (Bitcoin or Anonymous Credentials) service
+- SMIME and hosted certificate server services, key issuance and maintance
+- Security tracker (hosted) and maintenance of local-instance in house SQL options
+- Permission builder (and reporter) for website URLs, azure storage proxy
+- Logon screen mental health and UI/UX improvments to add human value to technical needs such as token refresh and session expiration
+- Azure API Management purchase (development instance)
+- Azure API Management purchase (production instance)
+- Cosmos DB purchase (development instance)
+- Cosmos DB purchase (production instance)
+- Yubikey token resales, configuration
+
+
+
+<div class="control-section card-control-section tile_layout">
+    <div class="row e-card-layout" style="text-align:center;">
+        <div class="row error" style="display:none;min-height:150px">
+            <div class="e-error-content" style="margin:auto;height:inherit;font-size:18px;font-weight:500;color:inherit">No results found. Please try a different search.</div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <!-- Tile View Layout  -->
+            <div id="card_sample_1" class="card_sample">
+                <SfCard ID="typescript">
+                    <CardImage Image="images/cards/Tile_1.png" />
+                    <CardHeader Title="Core Website" SubTitle="Free (with Azure Subscription)" />
+                    <CardContent Content="Core essentials to deploy, maintain, and run this website, and link payments to automatically link payments to pre-planned growth" />
+                    <CardFooter>
+                        <CardFooterContent>
+                            <SfButton CssClass="e-btn e-outline e-primary" @onclick="@(e => NavigateToUrlAsync("https://www.syncfusion.com/ebooks/ASPNET_MVC_Succinctly"))">Read More</SfButton>
+                        </CardFooterContent>
+                    </CardFooter>
+                </SfCard>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <!-- Tile View Layout  -->
+            <div id="card_sample_1" class="card_sample">
+                <SfCard ID="typescript">
+                    <CardImage Image="images/cards/Tile_1.png" />
+                    <CardHeader Title="Trustlane analysis wizard" SubTitle="Wiki data" />
+                    <CardContent Content="'v2 Hyperlinking' of privacy bills into a terminalogy neutral DMZ format, focused on rights and responsibilties " />
+                    <CardFooter>
+                        <CardFooterContent>
+                            <SfButton CssClass="e-btn e-outline e-primary" @onclick="@(e => NavigateToUrlAsync("https://www.syncfusion.com/ebooks/ASPNET_MVC_Succinctly"))">Read More</SfButton>
+                        </CardFooterContent>
+                    </CardFooter>
+                </SfCard>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <!-- Tile View Layout  -->
+            <div id="card_sample_1" class="card_sample">
+                <SfCard ID="typescript">
+                    <CardImage Image="images/cards/Tile_1.png" />
+                    <CardHeader Title="VPN and Wifi Security" SubTitle="Linear Opex" />
+                    <CardContent Content="Add speed, privacy, and security to consumer data messages in compliance with privacy regulations" />
+                    <CardFooter>
+                        <CardFooterContent>
+                            <SfButton CssClass="e-btn e-outline e-primary" @onclick="@(e => NavigateToUrlAsync("https://www.syncfusion.com/ebooks/ASPNET_MVC_Succinctly"))">Read More</SfButton>
+                        </CardFooterContent>
+                    </CardFooter>
+                </SfCard>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <!-- Tile View Layout  -->
+            <div id="card_sample_1" class="card_sample">
+                <SfCard ID="typescript">
+                    <CardImage Image="images/cards/Tile_1.png" />
+                    <CardHeader Title="SMTP Security Features" SubTitle="Linear Opex" />
+                    <CardContent Content="Add privacy and security to SMTP messages in compliance with privacy regulations" />
+                    <CardFooter>
+                        <CardFooterContent>
+                            <SfButton CssClass="e-btn e-outline e-primary" @onclick="@(e => NavigateToUrlAsync("https://www.syncfusion.com/ebooks/ASPNET_MVC_Succinctly"))">Read More</SfButton>
+                        </CardFooterContent>
+                    </CardFooter>
+                </SfCard>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <!-- Tile View Layout  -->
+            <div id="card_sample_1" class="card_sample">
+                <SfCard ID="typescript">
+                    <CardImage Image="images/cards/Tile_1.png" />
+                    <CardHeader Title="Phone and VOIP Security Features" SubTitle="Linear Opex" />
+                    <CardContent Content="Add privacy and security to phone calls in compliance with privacy regulations" />
+                    <CardFooter>
+                        <CardFooterContent>
+                            <SfButton CssClass="e-btn e-outline e-primary" @onclick="@(e => NavigateToUrlAsync("https://www.syncfusion.com/ebooks/ASPNET_MVC_Succinctly"))">Read More</SfButton>
+                        </CardFooterContent>
+                    </CardFooter>
+                </SfCard>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="source_link">
+    Source:
+    <a href="https://www.syncfusion.com/ebooks/" target="_blank">https://www.syncfusion.com/ebooks</a>
+</div>
+<style>
+
+
+
+
+
+
+
+
+
+
+    /* Tile view card customization */
+    .tile_layout.card-control-section .row.filter .tile_search {
+        justify-content: flex-end;
+    }
+
+    .tile_layout.card-control-section .row .e-card {
+        text-align: left;
+        margin: 10px;
+    }
+
+    .tile_layout.card-control-section .control-wrapper {
+        padding: 0 20px;
+    }
+
+    .tile_layout.card-control-section .row.filter {
+        margin: 0;
+    }
+
+    .tile_layout.card-control-section .e-card .e-card-actions a {
+        border: 1px solid;
+        display: block;
+        margin: auto;
+        width: 100px;
+        border-radius: inherit;
+    }
+
+    .tile_layout.card-control-section .e-card .e-card-image {
+        height: 180px;
+        width: inherit;
+    }
+
+    .tile_layout.card-control-section .row.filter .col-xs-3.col-sm-3.col-lg-3.col-md-3 col-sm-6 {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tile_layout.card-control-section .col-xs-3.col-sm-3.col-lg-3.col-md-3 col-sm-6 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card-control-section.tile_layout .e-card-layout {
+        margin: auto;
+        max-width: 190px;
+    }
+
+    #source_link {
+        float: right;
+        margin-right: 10px;
+    }
+
+    .tile_layout.card-control-section .col-xs-6.col-sm-6.col-lg-6.col-md-6 {
+        width: 25%;
+    }
+
+    .card-control-section.tile_layout .e-card-layout {
+        max-width: 890px;
+    }
+
+    .e-card .e-card-header .e-card-header-caption .e-card-header-title {
+        font-size: 20px;
+        font-family: Helvetica, 'Segoe UI';
+        font-weight: bold;
+    }
+
+    .e-card .e-card-header .e-card-header-caption .e-card-sub-title {
+        padding-top: 5px;
+    }
+
+    .e-card .e-card-content {
+        padding-top: 0px;
+        height: 110px;
+    }
+
+    .col-lg-3 .col-md-3 .col-sm-6 {
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+    }
+</style>
+
+
+<div class="col-lg-8 control-section sb-property-border">
+    <div class="content-wrapper">
+        <div class='sliderwrap'>
+            <label class="userselect">MinRange Slider With Limits</label>
+            <SfSlider @bind-Value="@Default" Min="0" Max="100" Type=SliderType.MinRange>
+                <SliderTicksData Placement="@Syncfusion.Blazor.Inputs.Placement.Before" LargeStep="20" SmallStep="5" ShowSmallTicks="true"></SliderTicksData>
+                <SliderTooltipData IsVisible="true" Placement="@TooltipPlacement.Before" ShowOn="@TooltipShowOn.Focus"></SliderTooltipData>
+                <SliderLimitData Enabled="true"
+                                 MinStart="@CurrentMinStart"
+                                 MinEnd="@CurrentMinEnd"
+                                 StartHandleFixed="@LockFirstHandle"></SliderLimitData>
+            </SfSlider>
+        </div>
+        <div class='sliderwrap'>
+            <label class="userselect">Range Slider With Limits</label>
+            <SfSlider @bind-Value="@Range" Min="0" Max="100" Type=SliderType.Range>
+                <SliderTicksData Placement="@Syncfusion.Blazor.Inputs.Placement.Before" LargeStep="20" SmallStep="5" ShowSmallTicks="true"></SliderTicksData>
+                <SliderTooltipData IsVisible="true" Placement="@TooltipPlacement.Before" ShowOn="@TooltipShowOn.Focus"></SliderTooltipData>
+                <SliderLimitData Enabled="true"
+                                 MinStart="@CurrentMinStart"
+                                 MinEnd="@CurrentMinEnd"
+                                 MaxStart="@CurrentMaxStart"
+                                 MaxEnd="@CurrentMaxEnd"
+                                 StartHandleFixed="@LockFirstHandle"
+                                 EndHandleFixed="@LockSecondHandle"></SliderLimitData>
+            </SfSlider>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 property-section property-custom">
+    <div class="property-panel-section">
+        <div class="property-panel-header">Properties</div><div class="property-panel-content">
+            <table id="property" title="Properties" class="property-panel-table">
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">
+                            <div class="userselect">MinStart</div>
+                        </td>
+                        <td style="width: 50%">
+                            <SfNumericTextBox TValue="int?" Value="@CurrentMinStart" Min="0" Max="100">
+                                <NumericTextBoxEvents TValue="int?" ValueChange="(e => { CurrentMinStart = (int)e.Value; })"></NumericTextBoxEvents>
+                            </SfNumericTextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">
+                            <div class="userselect">MinEnd</div>
+                        </td>
+                        <td style="width: 50%">
+                            <SfNumericTextBox TValue="int?" Value="@CurrentMinEnd" Min="0" Max="100">
+                                <NumericTextBoxEvents TValue="int?" ValueChange="(e => { CurrentMinEnd = (int)e.Value; })"></NumericTextBoxEvents>
+                            </SfNumericTextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">
+                            <div class="userselect">MaxStart</div>
+                        </td>
+                        <td style="width: 50%">
+                            <SfNumericTextBox TValue="int?" Value="@CurrentMaxStart" Min="0" Max="100">
+                                <NumericTextBoxEvents TValue="int?" ValueChange="(e => { CurrentMaxStart = (int)e.Value; })"></NumericTextBoxEvents>
+                            </SfNumericTextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">
+                            <div class="userselect">MaxEnd</div>
+                        </td>
+                        <td style="width: 50%">
+                            <SfNumericTextBox TValue="int?" Value="@CurrentMaxEnd" Min="0" Max="100">
+                                <NumericTextBoxEvents TValue="int?" ValueChange="(e => { CurrentMaxEnd = (int)e.Value; })"></NumericTextBoxEvents>
+                            </SfNumericTextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">
+                            <div class="userselect">Lock First Handle</div>
+                        </td>
+                        <td style="width: 50%">
+                            <SfCheckBox @bind-Checked="@LockFirstHandle"></SfCheckBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%">
+                            <div class="userselect">Lock Second Handle</div>
+                        </td>
+                        <td style="width: 50%">
+                            <SfCheckBox @bind-Checked="@LockSecondHandle"></SfCheckBox>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string[] MultiValue = new string[] { "United States", "Poland" };
+    private object MultiSelectData = new
+    {
+        mode = "Box",
+        placeholder = "Choose the countries",
+        dataSource = Places
+    };
+    public class Countries
+    {
+        public string text { get; set; }
+    }
+    private static List<Countries> Places = new List<Countries>()
+{
+        new Countries(){ text= "Australia" },
+        new Countries(){ text= "Bermuda" },
+        new Countries(){ text= "Canada" },
+        new Countries(){ text= "Cameroon" },
+        new Countries(){ text= "Denmark" },
+        new Countries(){ text= "Finland" },
+        new Countries(){ text= "Greenland" },
+        new Countries(){ text= "Poland" }
+    };
+
+    private string Phase1NumericValue = "$100.00";
+    private object NumericModel = new
+    {
+        placeholder = "Currency format",
+        value = 100,
+        format = "c2"
+    };
+
+    int Default = 25;
+    int[] Range = { 25, 75 };
+    int CurrentMinStart = 10;
+    int CurrentMinEnd = 40;
+    int CurrentMaxStart = 60;
+    int CurrentMaxEnd = 90;
+    bool LockFirstHandle = false;
+    bool LockSecondHandle = false;
+
+    // For tiles
+    [Inject] public NavigationManager NavigationManager { get; set; }
+    [Inject] public IJSRuntime JsRuntime { get; set; }
+    public async Task NavigateToUrlAsync(string url)
+    {
+        await JsRuntime.InvokeAsync<object>("open", url, "_blank");
+    }
+
+
+
+
+
+
+
+    public DateTime ProjectStart = new DateTime(2019, 2, 3);
+    public DateTime ProjectEnd = new DateTime(2019, 3, 23);
+    public DateTime EventDay1 = new DateTime(2019, 2, 8);
+    public List<dynamic> TaskCollection { get; set; }
+    public List<dynamic> ResourceCollection { get; set; }
+    public int DefaultUnitWidth = 33;
+    public int TopTierCount = 1;
+    public int BottomTierCount = 1;
+    public string DefaultFormatvalue = "MMM dd, yyyy";
+    public bool TopCheckboxEnabled = true;
+    public bool BottomCheckEnabled = true;
+    public string DefaultBottomTierValue = "Day";
+    public bool EnableTopNumericBox = true;
+    public bool EnableTopUnitDropDown = true;
+    public bool EnableTopFormatDropDown = true;
+    public bool EnableBottomNumericBox = true;
+    public bool EnableBottomUnitDropDown = true;
+    public bool EnableBottomFormatDropDown = true;
+    public string TopTierFormat = "MMM dd, yyyy";
+    public string BottomTierFormat = "";
+    TimelineViewMode TopTierUnit = TimelineViewMode.Week;
+    TimelineViewMode BottomTierUnit = TimelineViewMode.Day;
+   // public SfGantt<TimelineData.TaskData> GanttObject;
+    List<DayFormat> YearFormats = new List<DayFormat>()
+{
+        new DayFormat { Id ="MMM ''yy", Format = "Jan '18" },
+        new DayFormat {  Id = "y", Format = "2018"   },
+        new DayFormat { Id = "MMMM, y", Format = "January, 18" },
+    };
+    List<DayFormat> MonthFormats = new List<DayFormat>()
+{
+        new DayFormat { Id = "MMM dd, yyyy", Format = "Jan 01, 2018" },
+        new DayFormat { Id = "MMMM", Format = "January" },
+        new DayFormat { Id = "MMM", Format = "Jan" },
+    };
+    List<DayFormat> WeekFormats = new List<DayFormat>()
+{
+        new DayFormat  { Id = "MMM dd, yyyy", Format = "Jan 01, 2019" },
+        new DayFormat  { Id = "EEE MMM dd, 'yy", Format = "Mon Jan 01, '9" },
+        new DayFormat  { Id = "EEE MMM dd", Format = "Mon Jan 01" },
+    };
+    List<DayFormat> DayFormats = new List<DayFormat>()
+{
+        new DayFormat  { Id = "", Format = "M" },
+        new DayFormat  { Id = "E", Format = "Mon" },
+        new DayFormat  { Id = "dd", Format = "01" },
+    };
+    List<DayFormat> HourFormats = new List<DayFormat>()
+{
+        new DayFormat  { Id = "hh", Format = "00" },
+        new DayFormat  { Id = "hh : mm a", Format = "00 : 00 AM" },
+        new DayFormat  { Id = "h : mm a", Format = "0 : 00 AM" },
+    };
+    List<TimelineUnit> TimelineUnits = new List<TimelineUnit>()
+{
+        new TimelineUnit { Id = "Year", Unit = "Year"  },
+        new TimelineUnit { Id = "Month", Unit = "Month" },
+        new TimelineUnit { Id = "Week", Unit = "Week" },
+        new TimelineUnit { Id = "Day", Unit = "Day" },
+        new TimelineUnit { Id = "Hour", Unit = "Hour" }
+    };
+    List<DayFormat> WeekFormatValue = new List<DayFormat>()
+{
+        new DayFormat { Id = "MMM dd, yyyy", Format = "Jan 01, 2019"   },
+        new DayFormat {  Id = "EEE MMM dd, 'yy", Format = "Mon Jan 01, '19"  },
+        new DayFormat { Id = "EEE MMM dd", Format = "Mon Jan 01" },
+    };
+    List<DayFormat> DayFormatValue = new List<DayFormat>()
+{
+        new DayFormat { Id = "", Format = "M" },
+        new DayFormat { Id = "E", Format = "Mon" },
+        new DayFormat { Id = "dd", Format = "01" }
+    };
+    public class TimelineUnit
+    {
+        public string Id { get; set; }
+        public string Unit { get; set; }
+    }
+    public class DayFormat
+    {
+        public string Id { get; set; }
+        public string Format { get; set; }
+    }
+    protected override void OnInitialized()
+    {
+        //this.TaskCollection = TimelineData.TimelineRecord();
+        //this.ResourceCollection = TimelineData.EditingResources();
+    }
+    public void TopTierCheckChange(Syncfusion.Blazor.Buttons.ChangeEventArgs<bool> args)
+    {
+        if (args.Checked)
+        {
+            TopTierUnit = TimelineViewMode.Week;
+            EnableTopNumericBox = true;
+            EnableTopUnitDropDown = true;
+            EnableTopFormatDropDown = true;
+        }
+        else
+        {
+            TopTierUnit = TimelineViewMode.None;
+            EnableTopNumericBox = false;
+            EnableTopUnitDropDown = false;
+            EnableTopFormatDropDown = false;
+        }
+    }
+    public void BottomTierCheckChange(Syncfusion.Blazor.Buttons.ChangeEventArgs<bool> args)
+    {
+        if (args.Checked)
+        {
+            BottomTierUnit = TimelineViewMode.Day;
+            EnableBottomNumericBox = true;
+            EnableBottomUnitDropDown = true;
+            EnableBottomFormatDropDown = true;
+        }
+        else
+        {
+            BottomTierUnit = TimelineViewMode.None;
+            EnableBottomNumericBox = false;
+            EnableBottomUnitDropDown = false;
+            EnableBottomFormatDropDown = false;
+        }
+    }
+    public void TopUnitChange(Syncfusion.Blazor.DropDowns.ChangeEventArgs<string> args)
+    {
+        TimelineViewMode changedTopUnit;
+        switch (args.Value)
+        {
+            case "Year":
+                changedTopUnit = TimelineViewMode.Year;
+                WeekFormatValue = YearFormats;
+                break;
+            case "Month":
+                changedTopUnit = TimelineViewMode.Month;
+                WeekFormatValue = MonthFormats;
+                break;
+            case "Week":
+                changedTopUnit = TimelineViewMode.Week;
+                WeekFormatValue = WeekFormats;
+                break;
+            case "Day":
+                changedTopUnit = TimelineViewMode.Day;
+                WeekFormatValue = DayFormats;
+                break;
+            case "Hour":
+                changedTopUnit = TimelineViewMode.Hour;
+                WeekFormatValue = HourFormats;
+                break;
+            default:
+                changedTopUnit = TimelineViewMode.Week;
+                break;
+        }
+        this.updateUnitWidth(args.Value, "top");
+        TopTierUnit = changedTopUnit;
+    }
+    public void BottomUnitChange(Syncfusion.Blazor.DropDowns.ChangeEventArgs<string> args)
+    {
+        TimelineViewMode changedBottomUnit;
+        switch (args.Value)
+        {
+            case "Year":
+                changedBottomUnit = TimelineViewMode.Year;
+                DayFormatValue = YearFormats;
+                break;
+            case "Month":
+                changedBottomUnit = TimelineViewMode.Month;
+                DayFormatValue = MonthFormats;
+                break;
+            case "Week":
+                changedBottomUnit = TimelineViewMode.Week;
+                DayFormatValue = WeekFormats;
+                break;
+            case "Day":
+                changedBottomUnit = TimelineViewMode.Day;
+                DayFormatValue = DayFormats;
+                break;
+            case "Hour":
+                changedBottomUnit = TimelineViewMode.Hour;
+                DayFormatValue = HourFormats;
+                break;
+            default:
+                changedBottomUnit = TimelineViewMode.Day;
+                break;
+        }
+        this.updateUnitWidth(args.Value, "bottom");
+        BottomTierUnit = changedBottomUnit;
+    }
+    public void TopFormatChange(Syncfusion.Blazor.DropDowns.ChangeEventArgs<string> args)
+    {
+        TopTierFormat = args.Value;
+    }
+    public void BottomFormatChange(Syncfusion.Blazor.DropDowns.ChangeEventArgs<string> args)
+    {
+        BottomTierFormat = args.Value;
+    }
+    void updateUnitWidth(string unit, string tier)
+    {
+        int unitWidth;
+        string topUnit = tier == "top" ? unit : TopTierUnit.ToString();
+        string bottomUnit = tier == "bottom" ? unit : BottomTierUnit.ToString();
+        string[] units = new string[6] { "None", "Hour", "Day", "Week", "Month", "Year" };
+        string bootomCellUnit;
+        if (Array.IndexOf(units, topUnit) == 0 && Array.IndexOf(units, bottomUnit) == 0)
+        {
+            bootomCellUnit = "Day";
+        }
+        else if (Array.IndexOf(units, topUnit) == 0 && Array.IndexOf(units, bottomUnit) > 0)
+        {
+            bootomCellUnit = bottomUnit;
+        }
+        else if (Array.IndexOf(units, topUnit) > 0 && Array.IndexOf(units, bottomUnit) == 0)
+        {
+            bootomCellUnit = topUnit;
+        }
+        else if (Array.IndexOf(units, topUnit) <= Array.IndexOf(units, bottomUnit))
+        {
+            bootomCellUnit = topUnit;
+        }
+        else
+        {
+            bootomCellUnit = bottomUnit;
+        }
+        switch (bootomCellUnit)
+        {
+            case "Year":
+                unitWidth = 2000;
+                break;
+            case "Month":
+                unitWidth = 300;
+                break;
+            case "Week":
+                unitWidth = 150;
+                break;
+            case "Day":
+                unitWidth = 33;
+                break;
+            case "Hour":
+                unitWidth = 25;
+                break;
+            default:
+                unitWidth = 33;
+                break;
+        }
+        DefaultUnitWidth = unitWidth;
+    }
+}
+
+<style>
+
+
+
+
+
+
+
+
+
+
+
+    .content-wrapper {
+        width: 52%;
+        margin: 0 auto;
+        min-width: 185px;
+    }
+
+    .sliderwrap {
+        margin-top: 45px;
+    }
+
+    .e-bigger .content-wrapper {
+        width: 80%;
+    }
+
+    .sliderwrap label {
+        padding-bottom: 50px;
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+
+    .userselect {
+        -webkit-user-select: none;
+        /* Safari 3.1+ */
+        -moz-user-select: none;
+        /* Firefox 2+ */
+        -ms-user-select: none;
+        /* IE 10+ */
+        user-select: none;
+        /* Standard syntax */
+    }
+
+    .property-custom td {
+        padding: 5px;
+    }
+</style>

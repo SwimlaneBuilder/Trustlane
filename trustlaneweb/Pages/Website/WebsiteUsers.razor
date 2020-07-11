@@ -1,0 +1,253 @@
+﻿@page "/websitepeople"
+
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Spinner
+@using Syncfusion.Blazor.DropDowns
+@using System;
+@inject Microsoft.AspNetCore.Components.NavigationManager UriHelper
+
+<div class="col-lg-12 control-section">
+    <div class="content-wrapper">
+        <div class="row">
+            <SfSpinner @ref="SpinnerObj" Target="#container"></SfSpinner>
+            <div class="e-dddata">
+                <SfDropDownList TItem="DDData" TValue="string" PopupHeight="230px" Width="240px" Index=0 DataSource="@DLData">
+                    <DropDownListEvents TValue="string" ValueChange="Changedata"></DropDownListEvents>
+                    <DropDownListFieldSettings Text="Text" Value="Value"></DropDownListFieldSettings>
+                </SfDropDownList>
+            </div>
+            <div id="container">
+                <SfGrid DataSource="@GridData" AllowSelection="true" AllowSorting="true" AllowFiltering="true" EnableVirtualization="true" EnableHover="false" Height="600" RowHeight="38">
+                    <GridFilterSettings Type="Syncfusion.Blazor.Grids.FilterType.Menu"></GridFilterSettings>
+                    <GridPageSettings PageSize="80"></GridPageSettings>
+                    <GridSelectionSettings CheckboxOnly="true" PersistSelection="true" Type="SelectionType.Multiple"></GridSelectionSettings>
+                    <GridColumns>
+                        <GridColumn Type="ColumnType.CheckBox" AllowFiltering="false" AllowSorting="false" Width="60"></GridColumn>
+                        <GridColumn Field=@nameof(OverviewData.EmployeeID) HeaderText="Employee ID" Visible="false" IsPrimaryKey="true" Width="130"></GridColumn>
+                        <GridColumn Field=@nameof(OverviewData.Employees) HeaderText="Employee Name" Width="200" ClipMode="ClipMode.EllipsisWithTooltip">
+                            <Template>
+                                @{
+                                    var employee = (context as OverviewData);
+                                    <div>
+                                        <div class="empimg">
+                                            @if (employee.EmployeeImg == "usermale")
+                                            {
+                                                <span class="e-userimg sf-icon-Male"></span>
+                                            }
+                                            @if (employee.EmployeeImg == "userfemale")
+                                            {
+                                                <span class="e-userimg sf-icon-FeMale"></span>
+                                            }
+                                        </div>
+                                        <span id="Emptext">@employee.Employees</span>
+                                    </div>
+                                }
+                            </Template>
+                        </GridColumn>
+                        <GridColumn Field=@nameof(OverviewData.Designation) HeaderText="Designation" Width="170" FilterSettings="@(new FilterSettings{Type = Syncfusion.Blazor.Grids.FilterType.CheckBox })" ClipMode="ClipMode.EllipsisWithTooltip"></GridColumn>
+                        <GridColumn Field=@nameof(OverviewData.Mail) HeaderText="Mail" Width="230" FilterSettings="@(new FilterSettings{Type = Syncfusion.Blazor.Grids.FilterType.Menu })"></GridColumn>
+                        <GridColumn Field=@nameof(OverviewData.Location) HeaderText="Location" FilterSettings="@(new FilterSettings{Type = Syncfusion.Blazor.Grids.FilterType.CheckBox })" Width="140">
+                            <Template>
+                                @{
+                                    var location = (context as OverviewData);
+                                    <div class="loc">
+                                        <img src="@UriHelper.ToAbsoluteUri($"images/Grid/Map.png")" class="e-image" alt=@location.Location />
+                                        <span id="locationtext">@location.Location</span>
+                                    </div>
+                                }
+                            </Template>
+                        </GridColumn>
+                        <GridColumn Field=@nameof(OverviewData.Status) HeaderText="Status" FilterSettings="@(new FilterSettings{Type = Syncfusion.Blazor.Grids.FilterType.CheckBox })" Width="150">
+                            <Template>
+                                @{
+                                    var employee = (context as OverviewData);
+                                    if (employee.Status == "Active")
+                                    {
+                                        <div class="statustemp e-activecolor">
+                                            <span class="statustxt e-activecolor">@employee.Status</span>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="statustemp e-inactivecolor">
+                                            <span class="statustxt e-inactivecolor">@employee.Status</span>
+                                        </div>
+                                    }
+                                }
+                            </Template>
+                        </GridColumn>
+                        <GridColumn Field=@nameof(OverviewData.Trustworthiness) HeaderText="Trustworthiness" FilterSettings="@(new FilterSettings{Type = Syncfusion.Blazor.Grids.FilterType.CheckBox })" Width="160">
+                            <Template>
+                                @{
+                                    var trust = (context as OverviewData);
+                                    <div class="trust">
+                                        <img style="width: 31px; height: 24px" src="@UriHelper.ToAbsoluteUri($"images/Grid/{trust.Trustworthiness}.png")" />
+                                        <span id="Trusttext">@trust.Trustworthiness</span>
+                                    </div>
+                                }
+                            </Template>
+                        </GridColumn>
+                        <GridColumn Field=@nameof(OverviewData.Rating) HeaderText="Rating" FilterSettings="@(new FilterSettings{Type = Syncfusion.Blazor.Grids.FilterType.CheckBox })" AllowFiltering="false" AllowSorting="false" Width="180">
+                            <Template>
+                                @{
+                                    var rate = (context as OverviewData);
+                                    <div class="rate">
+                                        <div class="rating">
+                                            @for (var i = 0; i < 5; i++)
+                                            {
+                                                if (i < rate.Rating)
+                                                {
+                                                    <span class="star checked"></span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="star"></span>
+                                                }
+                                            }
+                                        </div>
+                                    </div>
+                                }
+                            </Template>
+                        </GridColumn>
+                        <GridColumn Field=@nameof(OverviewData.Software) HeaderText="Software Proficiency" AllowFiltering="false" AllowSorting="false" Width="180">
+                            <Template>
+                                @{
+                                    var employee = (context as OverviewData);
+                                    @if (employee.Status == "Inactive")
+                                    {
+                                        <div id="myProgress" class="pbar">
+                                            <div id="myBar" style="width:@employee.Software%" class="bar progressdisable">
+                                                <div id="label" class="barlabel">@employee.Software%</div>
+                                            </div>
+                                        </div>
+                                    }
+                                    @if (employee.Status == "Active")
+                                    {
+                                        <div id="myProgress" class="pbar">
+                                            <div id="myBar" style="width:@employee.Software%" class="bar">
+                                                <div id="label" class="barlabel">@employee.Software%</div>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </Template>
+                        </GridColumn>
+                        <GridColumn Field=@nameof(OverviewData.CurrentSalary) HeaderText="Current Salary" FilterSettings="@(new FilterSettings{Type = Syncfusion.Blazor.Grids.FilterType.Menu })" Format="C2" TextAlign="TextAlign.Right" Width="160"></GridColumn>
+                        <GridColumn Field=@nameof(OverviewData.Address) HeaderText="Address" FilterSettings="@(new FilterSettings{Type = Syncfusion.Blazor.Grids.FilterType.Menu })" Width="240" ClipMode="ClipMode.EllipsisWithTooltip"></GridColumn>
+                    </GridColumns>
+                </SfGrid>
+            </div>
+        </div>
+    </div>
+</div>
+@code{
+    public List<OverviewData> GridData { get; set; }
+    public int Value { get; set; } = 1000;
+    SfSpinner SpinnerObj;
+    string target { get; set; } = "#container";
+    public class DDData
+    {
+        public string Text { get; set; }
+        public string Value { get; set; }
+    }
+    public List<DDData> DLData = new List<DDData>() {
+        new DDData(){ Text= "1,000 Rows and 11 Columns", Value= "1000" },
+        new DDData(){ Text= "10,000 Rows and 11 Columns", Value= "10000" },
+        new DDData(){ Text= "1,00,000 Rows and 11 Columns", Value= "100000" },
+    };
+    public void Changedata(@Syncfusion.Blazor.DropDowns.ChangeEventArgs<string> args)
+    {
+        SpinnerObj.ShowSpinner(target);
+        Value = Int32.Parse(args.Value);
+        GridData = OverviewData.GetAllRecords(Value);
+        SpinnerObj.HideSpinner(target);
+    }
+    protected override void OnInitialized()
+    {
+        GridData = OverviewData.GetAllRecords(Value);
+    }
+
+    public class OverviewData
+    {
+        public OverviewData()
+        {
+
+        }
+
+        public static List<OverviewData> GetAllRecords(int DataCount)
+        {
+            string[] employees =  {
+        "Michael", "Kathryn", "Tamer", "Martin", "Davolio", "Nancy", "Fuller", "Leverling", "Peacock",
+        "Margaret", "Buchanan", "Janet", "Andrew", "Callahan", "Laura", "Dodsworth", "Anne",
+        "Bergs", "Vinet", "Anton", "Fleet", "Zachery", "Van", "King", "Jack", "Rose"};
+
+
+
+            string[] designation = { "Manager", "CFO", "Designer", "Developer", "Program Directory", "System Analyst", "Project Lead" };
+
+
+
+            string[] mail = { "sample.com", "arpy.com", "rpy.com", "mail.com", "jourrapide.com" };
+            string[] location = { "UK", "USA", "Sweden", "France", "Canada", "Argentina", "Austria", "Germany", "Mexico" };
+            string[] status = { "Active", "Inactive" };
+            string[] trustworthiness = { "Perfect", "Sufficient", "Insufficient" };
+
+
+
+            string[] address = {"59 rue de lAbbaye", "Luisenstr. 48", "Rua do Paço, 67", "2, rue du Commerce", "Boulevard Tirou, 255",
+        "Rua do mailPaço, 67", "Hauptstr. 31", "Starenweg 5", "Rua do Mercado, 12",
+        "Carrera 22 con Ave. Carlos Soublette #8-35", "Kirchgasse 6",
+        "Sierras de Granada 9993", "Mehrheimerstr. 369", "Rua da Panificadora, 12", "2817 Milton Dr.", "Kirchgasse 6",
+        "Åkergatan 24", "24, place Kléber", "Torikatu 38", "Berliner Platz 43", "5ª Ave. Los Palos Grandes", "1029 - 12th Ave. S.",
+        "Torikatu 38", "P.O. Box 555", "2817 Milton Dr.", "Taucherstraße 10", "59 rue de lAbbaye", "Via Ludovico il Moro 22",
+        "Avda. Azteca 123", "Heerstr. 22", "Berguvsvägen  8", "Magazinweg 7", "Berguvsvägen  8", "Gran Vía, 1", "Gran Vía, 1",
+        "Carrera 52 con Ave. Bolívar #65-98 Llano Largo", "Magazinweg 7", "Taucherstraße 10", "Taucherstraße 10",
+        "Av. Copacabana, 267", "Strada Provinciale 124", "Fauntleroy Circus", "Av. dos Lusíadas, 23",
+        "Rua da Panificadora, 12", "Av. Inês de Castro, 414", "Avda. Azteca 123", "2817 Milton Dr." };
+            string[] employeeimg = { "usermale", "userfemale" };
+
+
+
+            List<OverviewData> virtualData = new List<OverviewData>();
+            for (var i = 0; i < DataCount; i++)
+            {
+                var EmpName = employees[new Random().Next(employees.Length)];
+                virtualData.Add(new OverviewData()
+                {
+                    EmployeeID = 1000 + i,
+                    Employees = EmpName,
+                    Designation = designation[new Random().Next(designation.Length)],
+                    Location = location[new Random().Next(location.Length)],
+                    Status = status[new Random().Next(status.Length)],
+                    Trustworthiness = trustworthiness[new Random().Next(trustworthiness.Length)],
+                    Rating = new Random().Next(5),
+                    Software = new Random().Next(25, 100),
+                    EmployeeImg = employeeimg[new Random().Next(employeeimg.Length)],
+                    CurrentSalary = new Random().Next(100000),
+                    Mail = getMail(EmpName, mail),
+                    Address = address[new Random().Next(address.Length)],
+                });
+            }
+            return virtualData;
+        }
+        public static string getMail(string EmployeesName, string[] mailData)
+        {
+            string Mail = EmployeesName.ToLower() + (new Random().Next(100) + 10) + "@" + mailData[new Random().Next(mailData.Length)];
+            return Mail;
+        }
+
+
+        public int EmployeeID { get; set; }
+        public string Employees { get; set; }
+        public string Designation { get; set; }
+        public string Location { get; set; }
+        public string Status { get; set; }
+        public string Trustworthiness { get; set; }
+        public int Rating { get; set; }
+        public int Software { get; set; }
+        public string EmployeeImg { get; set; }
+        public int CurrentSalary { get; set; }
+        public string Address { get; set; }
+        public string Mail { get; set; }
+    }
+}

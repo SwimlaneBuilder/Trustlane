@@ -1,0 +1,44 @@
+﻿@using Syncfusion.Blazor.DropDowns
+
+
+<h3>Administrator Tools</h3>
+<br />
+Validate your administrator status to add discovery features into the solution.
+<br />
+<br />
+Consider the current network connectivity if it's better to connect from the secure Azure portal (IP range), this computer's IP, or the same when the local PC is connected to a VPN (todo have a HTTP get host to verify via blazor)
+
+For each app, configure usage of the refresh token with this::::::
+<div class="col-lg-12 control-section">
+    <div class="control_wrapper">
+        <SfMultiSelect TValue="string[]" Placeholder="Select countries" DataSource="@IpOriginList" AllowCustomValue="true" Mode="@VisualMode.Box">
+            <MultiSelectFieldSettings Text="Name" Value="Code"></MultiSelectFieldSettings>
+        </SfMultiSelect>
+    </div>
+</div>
+
+todo: define this globally, per app, like in a treeview
+
+@code{
+    public class IPOrigins
+    {
+        public string Name { get; set; }
+        public string Code { get; set; }
+    }
+    private List<IPOrigins> IpOriginList = new List<IPOrigins>
+    {
+        new IPOrigins() { Name = "Trustlane outbound API (5.6.7.0/30) - default", Code = "default" },
+        new IPOrigins() { Name = "2.3.4.5 (This IP as Temporary)", Code = "AU" },
+        new IPOrigins() { Name = "2.3.4.5 (This IP as Permanant)", Code = "BM" },
+        new IPOrigins() { Name = "http://intranet/vpnactivetext.txt", Code = "intranet" },
+        new IPOrigins() { Name = "Tor endpoint", Code = "tor" },
+    };
+}
+<style>
+
+    .control_wrapper {
+        width: 350px;
+        margin: 0 auto;
+        padding-top: 70px;
+    }
+</style>
