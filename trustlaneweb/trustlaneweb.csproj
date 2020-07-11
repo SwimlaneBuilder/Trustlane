@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RazorLangVersion>3.0</RazorLangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.0-preview.6.20312.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="5.0.0-preview.6.20312.15" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="3.2.0" PrivateAssets="all" />
+    <PackageReference Include="System.Net.Http.Json" Version="3.2.1" />
+    <PackageReference Include="Syncfusion.Blazor" Version="18.2.0.44" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\Tools\" />
+    <Folder Include="Pages\People\" />
+    <Folder Include="Pages\Website\" />
+    <Folder Include="Pages\Compliance\" />
+    <Folder Include="Pages\Wellness\" />
+    <Folder Include="Pages\Inputs\" />
+    <Folder Include="Pages\Inputs\Uploader\" />
+    <Folder Include="wwwroot\Images\" />
+    <Folder Include="wwwroot\Images\Grid\" />
+    <Folder Include="wwwroot\css\images\" />
+    <Folder Include="wwwroot\css\images\grid\" />
+    <Folder Include="Pages\About\" />
+    <Folder Include="Pages\Tools\AdministratorValidation\" />
+    <Folder Include="Pages\Tools\Fundraising\" />
+    <Folder Include="Pages\Tools\SecurityCheck\" />
+    <Folder Include="Pages\Tools\AnonAuth\" />
+    <Folder Include="Pages\Tools\Crypto\" />
+    <Folder Include="Pages\Tools\Trustlane\" />
+    <Folder Include="Pages\Tools\SMTP\" />
+    <Folder Include="Pages\Tools\NotifyAlert\" />
+    <Folder Include="Pages\Tools\Debug\" />
+  </ItemGroup>
+</Project>
