@@ -1,4 +1,0 @@
-﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="/Users/trust1/GitHub/Trustlane/trustlaneweb/bin/Debug/netstandard2.1/wwwroot/" />
-  <ContentRoot BasePath="_content/Syncfusion.Blazor" Path="/Users/trust1/.nuget/packages/syncfusion.blazor/18.2.0.44/build/../staticwebassets/" />
-</StaticWebAssets>
