@@ -1,14 +1,18 @@
-﻿<Properties StartupConfiguration="{28E291E4-36E5-446D-8B9B-D7F9206E0D64}|Default">
+﻿<Properties StartupConfiguration="{91F5CA13-2197-47B2-A413-5DC2FA130B98}|Default">
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="trustlaneweb" expanded="True" selected="True">
+          <Node name="trustlaneweb" expanded="True">
             <Node name="Utilities" expanded="True">
-              <Node name="EasyFSLMAllocations" expanded="True" />
+              <Node name="EasyFSLMAllocations" expanded="True">
+                <Node name="Program.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="trustlaneweb" expanded="True">
-              <Node name="Pages" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="About" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -16,7 +20,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.trustlaneweb PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.ItemProperties.Utilities.EasyFSLMAllocations FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Utilities.EasyFSLMAllocations PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>
     <String>EasyFSLMAllocation/EasyFSLMAllocation.csproj</String>
