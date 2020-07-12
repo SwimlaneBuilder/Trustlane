@@ -37,5 +37,6 @@
     <Folder Include="Pages\Tools\Debug\" />
     <Folder Include="Pages\Consolidated\" />
     <Folder Include="Pages\Tools\x509Certificates\" />
+    <Folder Include="Pages\Tools\ShipmentsAndDelivery\" />
   </ItemGroup>
 </Project>
