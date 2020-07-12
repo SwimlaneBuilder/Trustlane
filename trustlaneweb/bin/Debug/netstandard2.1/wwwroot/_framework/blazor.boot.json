@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "trustlaneweb.dll": "sha256-emLbUtom6\/TI+rhrq4XF9dLegeX7XB6V1td\/k8TIalk=",
+      "trustlaneweb.dll": "sha256-MU+S56yiryNtD8gZpP6x\/PyAMwAVCOEFoW3TvnJ0bbQ=",
       "System.Net.Http.Json.dll": "sha256-WkuXkEV\/\/B1J2kYqjuSPxgHubOHALmA548PhKTed2JE=",
       "System.Buffers.dll": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
       "mscorlib.dll": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
@@ -81,7 +81,7 @@
       "Newtonsoft.Json.dll": "sha256-BPeXAMTZKR8pJ7LpQA8+w4soJFGV1TLt2PPpnmpBUeE="
     },
     "pdb": {
-      "trustlaneweb.pdb": "sha256-vJa82Zf1SFDurZOchovHxwRXGh9Psk1Qi7BdB+RVVsQ=",
+      "trustlaneweb.pdb": "sha256-Owimr2b6CXg\/Wbp61o6A+vrvV097274mZkelrtBRJeU=",
       "Newtonsoft.Json.pdb": "sha256-itUtKKCpo2e5yuxPqn6PXeJEYMNdygaA3vFsiDaQ85Y="
     },
     "runtime": {

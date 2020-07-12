@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/emLbUtom6-TI_rhrq4XF9dLegeX7XB6V1td-k8TIalk=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/MU_S56yiryNtD8gZpP6x-PyAMwAVCOEFoW3TvnJ0bbQ=.hash",
       "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/trustlaneweb.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/trustlaneweb.dll.br"
     },
@@ -366,7 +366,7 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Newtonsoft.Json.dll.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/vJa82Zf1SFDurZOchovHxwRXGh9Psk1Qi7BdB_RVVsQ=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/Owimr2b6CXg-Wbp61o6A_vrvV097274mZkelrtBRJeU=.hash",
       "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/trustlaneweb.pdb",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/trustlaneweb.pdb.br"
     },
@@ -396,7 +396,7 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/HILjXZDlE5VYhHqEXICqWrkjpYWS2sWpLwc90czCBaA=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/Pl_knEthz1NG0WLFVPeIcMuzfR15I-sNdlm18-MrSDk=.hash",
       "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/blazor.boot.json",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.boot.json.br"
     }
