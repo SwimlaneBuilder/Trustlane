@@ -1,0 +1,404 @@
+{
+  "FilesToCompress": [
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/emLbUtom6-TI_rhrq4XF9dLegeX7XB6V1td-k8TIalk=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/trustlaneweb.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/trustlaneweb.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/WkuXkEV--B1J2kYqjuSPxgHubOHALmA548PhKTed2JE=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Net.Http.Json.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Net.Http.Json.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/ZxXy75PYbzJxNfAc-SAP1nUYm4gt1jSaOpFnBb9m85M=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Buffers.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Buffers.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/BaZPMj95_YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/mscorlib.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/mscorlib.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/TkH6yxFQlTfY8NfznePrCdYJiEVpM9Dqy4Uu4H9qk10=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Threading.Tasks.Extensions.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Threading.Tasks.Extensions.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/-cPXlNTX8GKF-lIn-2DIjtxTe0Wpy4ZDcyAj67b6JYk=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Memory.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Memory.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/w4uGtkuXH3JlSrR4bJgOOctM4Mi7zqYKkdmB4Chhetg=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Text.Json.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Text.Json.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/kL-omZDwqByAi_lPdMeDmr3XjHcn4RVb_LmZ4mut1Yc=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Runtime.CompilerServices.Unsafe.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/NktPvm6CrEWy_t6kSiltKtuBb-yT9TVcx4h01-zoF_Q=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Bcl.AsyncInterfaces.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Bcl.AsyncInterfaces.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/-zcPVM75OAY_joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/netstandard.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/netstandard.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/IPbQMdJxZXdk8HTlaPyXdQ6Zb82iZLphnM74yO4EURQ=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Xml.Linq.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Xml.Linq.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/Zw2-5aDWjgMedporhjigwhi-UCLcfl0tfa0LXUyD9HE=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Core.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Core.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/r6QdEXq0KfB8oZDzhnV4xskSbzJA0yBVi6XFpa3TGHM=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/ob5gN-szfb1CwWnyQWvWvuid3u4df593KvZeoJQEaKc=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/WebAssembly.Net.WebSockets.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/WebAssembly.Net.WebSockets.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/6XMT1eT3svGdg6hFzAHJscYdTQjakoYccYTdHmKSr7Y=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/WebAssembly.Bindings.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/WebAssembly.Bindings.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/8g0neeYVmPrxWgbMI0ZTVO6257qMisUTPZ78egAnIMw=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Numerics.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Numerics.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/RMOYBniHZkD8OZrBV3ONIMTZqsBhSAcBFm4pVuY9dv4=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Xml.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Xml.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/fMngt4py0YmfHqV6eONyCI6R5m_YOE7KZ3U4MzCrskE=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Mono.Security.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Mono.Security.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/VAHA4LWcsdHUBgFG1-xwhc4IyJ0ZH9UyK9_qSPzDa6Y=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Transactions.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Transactions.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/C09aqx1vDLK7zQ9XnZcUqAgTDRwybxhRg-FR8HSk1v8=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Runtime.Serialization.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Runtime.Serialization.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/6mtLxbGMMGcIfch8cp0W9gmBoI493AxBRUPGEzOn3nU=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.ServiceModel.Internals.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.ServiceModel.Internals.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/moW4EYN6ExD6T0vSBMMggn62cZaTd8dSr9b-yj-9dPM=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Net.Http.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Net.Http.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/LUtkiqNd5ABTiuiYaqzaJxVjPq_Z4FqezuIWk-faqSA=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Net.Http.WebAssemblyHttpHandler.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Net.Http.WebAssemblyHttpHandler.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/R8CUbbWAKar388eFQJhUgiTgLEv2Mih9wr9iO0P7ImU=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.ComponentModel.Composition.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.ComponentModel.Composition.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/ptCMHBy9q8MMLU0ukLMuvvhQk-yYljw37MTKtfsvuFQ=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.IO.Compression.FileSystem.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.IO.Compression.FileSystem.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/hLbkXBzxUk9DSXYTLGRowe_80rxmpXsqEZbPIL4_5zs=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.IO.Compression.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.IO.Compression.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/vcCLMX4xAsUqKuQjjIkzu1O9pHGO-tdvysgSmEjL6oo=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Drawing.Common.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Drawing.Common.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/eejp4oI3sQBq-tI6GsJNaPu3Dkdot5Vbn8_R3w2vYLE=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Data.DataSetExtensions.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Data.DataSetExtensions.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/dxfTuT6ffPMmvuUUTfv7_bpLtOZZZHQdz77hjhy9qHw=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Data.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Data.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/qAKfFnquY_7UC-MzLi04rjqEhLzTryCoLg-S6MxI19I=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Numerics.Vectors.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Numerics.Vectors.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/_P9z9rhKR3bZNKJi5WJxtEFkPNLpHBFnRmOuBmaHJvY=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Text.Encodings.Web.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Text.Encodings.Web.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/5TPSGwbEgl4mSGFDyLn5igAbEqgih-aCZAQOyesGjZE=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/3LwZ1kEbqYRsT3mQ0V4E_sMl63IA4RAV3l9fZbhRH5I=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Syncfusion.Licensing.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Syncfusion.Licensing.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/wDPt-zh9xGop_Vp7dKTGGcT9bZIAatqQ-eQLhtASLgw=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Text.Encoding.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Text.Encoding.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/fFIyhWRt3TsR3191q2WtKgMNr3s-jNNnO4P5rrUojjA=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Reflection.Extensions.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Reflection.Extensions.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/egPOud7Mcxx-20iAZiekEmazNYxAwi8HO1Z5_a4Ikww=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Linq.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Linq.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/1FBfAreOfbXDp0WA294BCrk0EIa5ZqlghOuvDlqFtk8=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Runtime.Extensions.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Runtime.Extensions.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/YsVP1MH7elMIe4iUnDj_hJHfSvMWW8X4hzNlc2bvJ4k=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Text.RegularExpressions.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Text.RegularExpressions.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/zWDzFtXZzC_KLMGVRm7c4nLj3X7VnzT9SMdxCVqb3dE=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Collections.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Collections.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/8Q_uKcqkDjFjcXfcYU073dQlKb5IRta-UHFtV3Tjz9s=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Reflection.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Reflection.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/U4q43ZeuBEBaCygKJwr18fjDYwnFv22MHuvMVqnpNzI=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Resources.ResourceManager.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Resources.ResourceManager.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/6CpyRQAYrVPJfNYBKH0K9lWX_rNPO15lwNhGHPmvxtk=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Runtime.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Runtime.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/QMvx2sr7dKL4FuDoqfOdCJVz5suaieQZukB9XkTOaXc=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.AspNetCore.Components.Web.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/Xl3Cn5HFqJGAUZTEq_-6Wd1XdRwGnkgAjRj8U00x564=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.AspNetCore.Components.Forms.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Components.Forms.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/tmnkCmP9OzLUkpQ3LP7PRosi7gt5pyfEZCM6aqAokFI=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.ComponentModel.Annotations.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.ComponentModel.Annotations.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/LIfCYwg_PHltTK4z3EnbSkA7m2cn8JS4jHVthdKrDF8=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.ComponentModel.DataAnnotations.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.ComponentModel.DataAnnotations.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/QoTMRPbQ6J2w7LrfliEmR6Jb_aEqQgl9xkfxo43YvQw=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.AspNetCore.Components.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Components.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/ZJeGq_zipSeRlT6CumVXQieDU7ec3nD_8rywW-Q70iA=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.Logging.Abstractions.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/uOmxRE2giAFdD4J2c0M8sEdZA5J7MYqB_fgK0ysE8w4=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.JSInterop.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.JSInterop.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/0JvQtge_fISlG_S0u9Bpx-DSHaa7UVscwFsMmeg3Nts=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.AspNetCore.Components.WebAssembly.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Components.WebAssembly.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/dHdTjzG5NJ9aeC4AX-cY71PDOKE5uP8rdeWG_opNPVk=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.DependencyInjection.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.DependencyInjection.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/inVyTd6WbWvgufWg3HeBVQkexT8p-WmzBabT7ZP_F5c=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.Primitives.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Primitives.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/linrqmlnRGVP04q2tVRRZgapigcq3S0y8L_hNz4CsYk=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.Configuration.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Configuration.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/1Q9qMZXNRXBuiRoH9edgHZwudbkPUw1LLED2vF-VwHY=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.Configuration.Abstractions.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Configuration.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/Fcds4uZjSurcDeaS3oOydtViKQ2gmKcmpaOW9XT94gw=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.Configuration.Json.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Configuration.Json.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/qhBd4fSVsMc2wxjcITsI8EMwqpKtRVoieadz7Uz5YXE=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.Configuration.FileExtensions.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Configuration.FileExtensions.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/JgkLOBz6zyb1b9w8SivsdZrUA7-NqiN0N16gdA6PZ3I=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.FileProviders.Physical.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.FileProviders.Physical.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/PxlgxdP1Oh8jNUWr3P6FqYEeQt5tZ_902S74LOfceEI=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.FileSystemGlobbing.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.FileSystemGlobbing.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/ikqAZ7bodWEUZaiXGn-pytN51Z-Up8aTGAkXgT84rFE=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.FileProviders.Abstractions.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.FileProviders.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/SVqcaVOjXeKWg28YfiuC3siFsufZerePtEi7_CRnLvw=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.Logging.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Logging.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/ax2JN_qQxFY-dlJIwghTJJKjcsHaAaabLi03DHVtI14=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Diagnostics.DiagnosticSource.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Diagnostics.DiagnosticSource.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/XAnEkn2DkDU-Xn588HKF6xZ5f3g9Eyzmw3DjEGtn2lM=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Runtime.InteropServices.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Runtime.InteropServices.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/tFMMNru1KjM9tY0dph3potA-qlmOtgZOwHLp_imUF7Y=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Diagnostics.Debug.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Diagnostics.Debug.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/mzuLugvmIOgYjOk4f3eQas5TIH2wER7oBvjOd1j22ps=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Threading.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Threading.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/Pts2S7BakHY8LACDy5I26bdgF2CrhSoTCirY4R-_sBE=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Collections.Concurrent.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Collections.Concurrent.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/g3D7CEj2L0Qctx7Es-Pvvvauld0RQjyo76PPB99L9Qk=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/System.Diagnostics.Tracing.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.Diagnostics.Tracing.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/93eJE-ijkRNcJYbSfaIPbUgdni-3KzOCBznAx82Ploc=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.Options.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Options.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/K9m4qugiSqmlUdHi3rLWwmXitcL5IHOO3SIEYcyR6Jc=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.JSInterop.WebAssembly.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/PgdPlfIGMiiwlpiXDS2THy-8i45HhlLlGEutDx0fLEI=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Syncfusion.Blazor.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Syncfusion.Blazor.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/ubyINHXDmWOAugBDEb8CCz_uV68eordXiYDxpUeRBvg=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.CSharp.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.CSharp.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/lHuNoJVY9KnfcXlh0ufijrAOuomHZBEpWktbKQaY89k=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Syncfusion.PdfExport.Net.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Syncfusion.PdfExport.Net.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/99ZzjvOojmi9x2Na1dhmq2s2JjJ5LcCbC-qOE9RWJ9U=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Syncfusion.ExcelExport.Net.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Syncfusion.ExcelExport.Net.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/BPeXAMTZKR8pJ7LpQA8_w4soJFGV1TLt2PPpnmpBUeE=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Newtonsoft.Json.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Newtonsoft.Json.dll.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/vJa82Zf1SFDurZOchovHxwRXGh9Psk1Qi7BdB_RVVsQ=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/trustlaneweb.pdb",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/trustlaneweb.pdb.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/itUtKKCpo2e5yuxPqn6PXeJEYMNdygaA3vFsiDaQ85Y=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Newtonsoft.Json.pdb",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Newtonsoft.Json.pdb.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash",
+      "Source": "\/Users\/trust1\/.nuget\/packages\/microsoft.aspnetcore.components.webassembly.runtime\/3.2.0\/tools\/dotnetwasm\/wasm\/dotnet.3.2.0.js",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/wasm\/dotnet.3.2.0.js.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash",
+      "Source": "\/Users\/trust1\/.nuget\/packages\/microsoft.aspnetcore.components.webassembly.runtime\/3.2.0\/tools\/dotnetwasm\/wasm\/dotnet.timezones.dat",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/wasm\/dotnet.timezones.dat.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash",
+      "Source": "\/Users\/trust1\/.nuget\/packages\/microsoft.aspnetcore.components.webassembly.runtime\/3.2.0\/tools\/dotnetwasm\/wasm\/dotnet.wasm",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/wasm\/dotnet.wasm.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/71nPmAR09Rean3frHn6pubgbFQ7CH5X6v7uVQTGtiUc=.hash",
+      "Source": "\/Users\/trust1\/.nuget\/packages\/microsoft.aspnetcore.components.webassembly.build\/5.0.0-preview.6.20312.15\/tools\/blazor\/blazor.webassembly.js",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.webassembly.js.gz"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/HILjXZDlE5VYhHqEXICqWrkjpYWS2sWpLwc90czCBaA=.hash",
+      "Source": "\/Users\/trust1\/GitHub\/Trustlane\/trustlaneweb\/obj\/Debug\/netstandard2.1\/blazor\/blazor.boot.json",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.boot.json.gz"
+    }
+  ]
+}

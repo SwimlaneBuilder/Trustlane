@@ -1,0 +1,48 @@
+﻿<Properties StartupConfiguration="{28E291E4-36E5-446D-8B9B-D7F9206E0D64}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Wellness/Index.razor">
+    <Files>
+      <File FileName="Pages/Website/WebsiteAccessControl.razor" Line="1" Column="1" />
+      <File FileName="Pages/Website/WebsiteUsers.razor" Line="1" Column="1" />
+      <File FileName="Pages/Website/CustomerRequestTracking.razor" Line="1" Column="1" />
+      <File FileName="Pages/Consolidated/Education.razor" Line="1" Column="1" />
+      <File FileName="Pages/Consolidated/Finance.razor" Line="3" Column="245" />
+      <File FileName="Pages/Consolidated/Health.razor" Line="7" Column="106" />
+      <File FileName="Pages/Consolidated/LocationAlerts.razor" Line="3" Column="63" />
+      <File FileName="Pages/Consolidated/SelfSoverignityAssertion.razor" Line="6" Column="241" />
+      <File FileName="Pages/Consolidated/Index.razor" Line="10" Column="33" />
+      <File FileName="Pages/People/Index.razor" Line="18" Column="26" />
+      <File FileName="Pages/Website/ComplianceDashboard.razor" Line="1" Column="1" />
+      <File FileName="Pages/Website/Index.razor" Line="7" Column="19" />
+      <File FileName="Pages/Wellness/Index.razor" Line="2" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="trustlaneweb" expanded="True">
+            <Node name="trustlaneweb" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="About" expanded="True" />
+                <Node name="Compliance" expanded="True" />
+                <Node name="Consolidated" expanded="True" />
+                <Node name="People" expanded="True" />
+                <Node name="Website" expanded="True" />
+                <Node name="Wellness" expanded="True">
+                  <Node name="Index.razor" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Shared" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.trustlaneweb PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
