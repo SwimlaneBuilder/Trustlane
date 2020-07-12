@@ -1,17 +1,24 @@
 ﻿<Properties StartupConfiguration="{91F5CA13-2197-47B2-A413-5DC2FA130B98}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Tools/x509Certificates/RootCertificateTrusts.razor">
+    <Files>
+      <File FileName="Pages/Tools/x509Certificates/Index.razor" Line="1" Column="1" />
+      <File FileName="Pages/Tools/x509Certificates/RootCertificateTrusts.razor" Line="2" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="trustlaneweb" expanded="True">
             <Node name="Utilities" expanded="True">
-              <Node name="EasyFSLMAllocations" expanded="True">
-                <Node name="Program.cs" selected="True" />
-              </Node>
+              <Node name="EasyFSLMAllocations" expanded="True" />
             </Node>
             <Node name="trustlaneweb" expanded="True">
               <Node name="Pages" expanded="True">
                 <Node name="About" expanded="True" />
+                <Node name="Tools" expanded="True">
+                  <Node name="x509Certificates" expanded="True">
+                    <Node name="RootCertificateTrusts.razor" selected="True" />
+                  </Node>
+                </Node>
               </Node>
             </Node>
           </Node>

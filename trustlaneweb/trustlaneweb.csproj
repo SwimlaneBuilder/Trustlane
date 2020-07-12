@@ -36,5 +36,6 @@
     <Folder Include="Pages\Tools\NotifyAlert\" />
     <Folder Include="Pages\Tools\Debug\" />
     <Folder Include="Pages\Consolidated\" />
+    <Folder Include="Pages\Tools\x509Certificates\" />
   </ItemGroup>
 </Project>
